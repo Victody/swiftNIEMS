@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Estudando_o_Basicoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4C-qg-MAm">
+                                <rect key="frame" x="20" y="72" width="374" height="146"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <imageReference key="image" image="square.fill" catalog="system" symbolScale="large"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Gerador de números " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0dR-pW-NHS">
+                                <rect key="frame" x="87" y="81" width="240" height="49"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Randômicos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rda-YL-3HD">
+                                <rect key="frame" x="58" y="138" width="298" height="67"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="56"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WM-GT-kKE">
+                                <rect key="frame" x="20" y="261.5" width="374" height="372.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <state key="normal" title="Gerar Número">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="circle" catalog="system"/>
+                                <connections>
+                                    <action selector="numbGen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfL-Ej-yZQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hK-mq-b7z">
+                                <rect key="frame" x="180" y="709" width="55" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rda-YL-3HD" firstAttribute="top" secondItem="0dR-pW-NHS" secondAttribute="bottom" constant="8" symbolic="YES" id="9cj-58-bVL"/>
+                            <constraint firstItem="4WM-GT-kKE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9g4-uL-hsW"/>
+                            <constraint firstItem="4WM-GT-kKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HsR-wl-1uy"/>
+                            <constraint firstItem="7hK-mq-b7z" firstAttribute="top" secondItem="4WM-GT-kKE" secondAttribute="bottom" constant="72.5" id="P5f-N7-bEY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4WM-GT-kKE" secondAttribute="trailing" constant="20" id="Poi-kU-5vY"/>
+                            <constraint firstItem="rda-YL-3HD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="UXk-8M-mho"/>
+                            <constraint firstItem="k4C-qg-MAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fXw-fs-GL3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0dR-pW-NHS" secondAttribute="trailing" constant="87" id="osV-Aj-w90"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7hK-mq-b7z" secondAttribute="bottom" constant="153" id="poG-67-7Ng"/>
+                            <constraint firstItem="k4C-qg-MAm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-303" id="qda-rP-sIr"/>
+                            <constraint firstItem="0dR-pW-NHS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="s8H-s1-iIF"/>
+                            <constraint firstItem="4WM-GT-kKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQT-wJ-EPl"/>
+                            <constraint firstItem="7hK-mq-b7z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="xCO-Qg-m80"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rda-YL-3HD" secondAttribute="trailing" constant="58" id="yGO-Il-QcJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7hK-mq-b7z" secondAttribute="trailing" constant="179" id="zuy-Lx-zno"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblResult" destination="7hK-mq-b7z" id="fkw-rX-TED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
