@@ -8,11 +8,18 @@
 import UIKit
 
 class DetalhesViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var resultLbl: UILabel!
+    
+    var textoRecebido: String = "0"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        resultLbl.text = textoRecebido
     }
     
 

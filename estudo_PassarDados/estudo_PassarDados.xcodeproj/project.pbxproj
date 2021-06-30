@@ -13,6 +13,7 @@
 		D2D28AC2268CCE9300302440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D28AC0268CCE9300302440 /* Main.storyboard */; };
 		D2D28AC4268CCE9500302440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D28AC3268CCE9500302440 /* Assets.xcassets */; };
 		D2D28AC7268CCE9500302440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D28AC5268CCE9500302440 /* LaunchScreen.storyboard */; };
+		D2D28AD0268CD58700302440 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D28ACF268CD58700302440 /* DetalhesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D2D28AC3268CCE9500302440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2D28AC6268CCE9500302440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2D28AC8268CCE9500302440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D28ACF268CD58700302440 /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				D2D28ABA268CCE9300302440 /* AppDelegate.swift */,
 				D2D28ABC268CCE9300302440 /* SceneDelegate.swift */,
+				D2D28ACF268CD58700302440 /* DetalhesViewController.swift */,
 				D2D28ABE268CCE9300302440 /* ViewController.swift */,
 				D2D28AC0268CCE9300302440 /* Main.storyboard */,
 				D2D28AC3268CCE9500302440 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D28AD0268CD58700302440 /* DetalhesViewController.swift in Sources */,
 				D2D28ABF268CCE9300302440 /* ViewController.swift in Sources */,
 				D2D28ABB268CCE9300302440 /* AppDelegate.swift in Sources */,
 				D2D28ABD268CCE9300302440 /* SceneDelegate.swift in Sources */,
